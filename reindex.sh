@@ -32,9 +32,9 @@ fi
 STARTEPOCH=$(date +'%s')
 APPNAME=$(basename $0)
 
-SITEDIR="/export/home/$SITEUSER/web/vhosts/$SITE"
+SITEDIR="/home/$SITEUSER/web/vhosts/$SITE"
 INDEXDIR="$SITEDIR/indexes"
-USERLIB=/export/home/$SITEUSER/perl5/lib/perl5/
+USERLIB=/home/$SITEUSER/perl5/lib/perl5/
 SITELIB=$SITEDIR/scripts/lib/
 if [ ! -d "$SITEDIR" ]; then
   echo "$APPNAME: The directory $SITEDIR doesnt exist for $SITE"
